@@ -5,6 +5,7 @@
 		"inlineSourceMap": true,
 		"typeRoots": ["node_modules/@types"],
 		"newLine": "LF",
-		"removeComments": true,
+        "removeComments": true,
+        "types": ["firefox-webext-browser"]
 	}
 }

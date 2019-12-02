@@ -9,11 +9,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "dev": "tsc --watch",
+    "lint": "npm run build && web-ext lint -s ./src",
+    "pack": "npm run build && npm run lint && web-ext build -o -s ./src -a ./dist -i \"**/*.txt\" \"**/*.ts\""
   },
   "author": "Daniel Lobo",
   "license": "MIT",
   "devDependencies": {
     "@types/firefox-webext-browser": "^67.0.2",
-    "typescript": "^3.0.1"
+    "typescript": "^3.0.1",
+    "web-ext": "^3.2.1"
   }
 }
