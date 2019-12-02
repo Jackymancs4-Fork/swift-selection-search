@@ -6,7 +6,9 @@
   "homepage": "https://github.com/CanisLupus/swift-selection-search",
   "repository": "github:CanisLupus/swift-selection-search",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "tsc --watch",
   },
   "author": "Daniel Lobo",
   "license": "MIT",
